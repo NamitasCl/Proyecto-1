@@ -1,0 +1,119 @@
+.wrapper {
+    
+    width: 730px;
+    height: 280px;
+    margin: 25vh auto;
+    box-shadow: 0 0 10px 1px lightgray;
+    border-radius: 10px;
+    display: flex;
+    
+    &__izq {
+        min-width: 285px;
+        height: 100%;
+        background-image: url(/images/drawers.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center left;
+    }
+
+    &__derecha {
+        padding: 35px 40px 35px 40px;
+
+        h2 {
+            color: $veryDarkGreyish;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: $desaturatedDarkBlue;
+            margin-bottom: 20px;
+        }
+        
+        .user {
+
+            width: 355px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            &__share {
+                background-image: url(/images/icon-share.svg);
+                background-repeat: no-repeat;
+                width: 30px;
+                height: 30px;
+                background-color: $lightGrayishBlue;
+                border-radius: 50%;
+                background-position: center 40%;
+                cursor: pointer;
+                position: relative;
+
+                .activo {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    position: absolute;
+                    top: -260%;
+                    width: 250px;
+                    height: 50px;
+                    padding: 0 40px;
+                    -webkit-transform: translateX(-50%);
+                    transform: translateX(-44%);
+                    background: $veryDarkGreyish;
+                    border-radius: 10px;
+                    color: white;
+                    font-size: 20px;
+                    visibility: hidden;
+                }
+
+                .activo a {
+                    text-decoration: none;
+                    color: white;
+                }
+
+                .activo::before {
+                    content: "";
+                    position: absolute;
+                    width: 70px;
+                    height: 20px;
+                    background: $veryDarkGreyish;
+                    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+                    transform: translateX(-50%) rotate(180deg);
+                    top: 80%;
+                    left: 50%;
+                    
+                }
+
+                .activo #share {
+                    font-size: 13px;
+                    letter-spacing: 5px;
+                }
+
+                .oculto {
+                    visibility: visible;
+                    
+                }
+
+            }
+
+            &__image {
+                width: 40px;
+                height: 40px;
+                background-image: url(/images/avatar-michelle.jpg);
+                background-size: cover;
+                border-radius: 50%;
+                margin-right: 20px;
+            }
+
+            &__name {
+                display: block;
+                color: $veryDarkGreyish;
+                font-weight: 700;
+            }
+
+            &__date {
+                color: $greyishBlue;
+            }
+
+        }
+    }
+}

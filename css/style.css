@@ -1,0 +1,166 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    width: 375px;
+  }
+}
+
+@media screen and (min-width: 641px) {
+  body {
+    width: 1440px;
+  }
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper {
+  width: 730px;
+  height: 280px;
+  margin: 25vh auto;
+  -webkit-box-shadow: 0 0 10px 1px lightgray;
+          box-shadow: 0 0 10px 1px lightgray;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper__izq {
+  min-width: 285px;
+  height: 100%;
+  background-image: url(/images/drawers.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+.wrapper__derecha {
+  padding: 35px 40px 35px 40px;
+}
+
+.wrapper__derecha h2 {
+  color: #48556a;
+  margin-bottom: 20px;
+}
+
+.wrapper__derecha p {
+  color: #6d7f97;
+  margin-bottom: 20px;
+}
+
+.wrapper__derecha .user {
+  width: 355px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper__derecha .user__share {
+  background-image: url(/images/icon-share.svg);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  background-color: #ecf2f8;
+  border-radius: 50%;
+  background-position: center 40%;
+  cursor: pointer;
+  position: relative;
+}
+
+.wrapper__derecha .user__share .activo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: -260%;
+  width: 250px;
+  height: 50px;
+  padding: 0 40px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-44%);
+  background: #48556a;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  visibility: hidden;
+}
+
+.wrapper__derecha .user__share .activo a {
+  text-decoration: none;
+  color: white;
+}
+
+.wrapper__derecha .user__share .activo::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 20px;
+  background: #48556a;
+  -webkit-clip-path: polygon(50% 0, 100% 100%, 0 100%);
+          clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  -webkit-transform: translateX(-50%) rotate(180deg);
+          transform: translateX(-50%) rotate(180deg);
+  top: 80%;
+  left: 50%;
+}
+
+.wrapper__derecha .user__share .activo #share {
+  font-size: 13px;
+  letter-spacing: 5px;
+}
+
+.wrapper__derecha .user__share .oculto {
+  visibility: visible;
+}
+
+.wrapper__derecha .user__image {
+  width: 40px;
+  height: 40px;
+  background-image: url(/images/avatar-michelle.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.wrapper__derecha .user__name {
+  display: block;
+  color: #48556a;
+  font-weight: 700;
+}
+
+.wrapper__derecha .user__date {
+  color: #9eafc2;
+}
+/*# sourceMappingURL=style.css.map */
