@@ -7,52 +7,47 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;600&display=swap" rel="stylesheet">
-
+  <script src="https://kit.fontawesome.com/0f1f8d46a9.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Article preview component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
-  <div id="contenedor">
-    <div class="cont-izq">
+  <div class="wrapper">
+    <div class="wrapper__izq">
       
     </div>
-    <div class="cont-der">  
-      <h1>
+    <div class="wrapper__derecha">  
+      <h2>
         Shift the overall look and feel by adding these wonderful
         touches to furniture in your home
-      </h1>
+      </h2>
       <p>
         Ever been in a room and felt like something was missing? Perhaps
         it felt slightly bare and uninviting. I’ve got some simple tips
         to help you make any room feel complete.
       </p>
-      <div class="user-profile">
-        <div class="user">
-          <img src="images/avatar-michelle.jpg" alt="User picture">
-          <div class="user-name">
-            <p>Michelle Appleton</p>
-            <p>28 Jun 2020</p>
+      <div class="user">
+          <div class="flex"> 
+            <img class="user__image" src="images/avatar-michelle.jpg" alt="User picture">
+            <div class="user__name">
+                <p>Michelle Appleton</p>
+                <p>28 Jun 2020</p>
+            </div>
+          </div>  
+          <div class="user__share" id="user__share">
+              <div id="oculto" class="activo">
+                  <span id="share">SHARE</span>
+                  <i class="fab fa-facebook-square"></i>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-pinterest"></i>
+              </div>
           </div>
         </div>
-        <span id="share">Share</span>
-        
-      </div>
     </div>
   </div>
+<script src="scripts/js.js"></script>
 </body>
 
 </html>

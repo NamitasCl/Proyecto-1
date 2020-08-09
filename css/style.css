@@ -81,6 +81,10 @@ body {
           justify-content: space-between;
 }
 
+.wrapper__derecha .user p {
+  margin: 0px;
+}
+
 .wrapper__derecha .user__share {
   background-image: url(/images/icon-share.svg);
   background-repeat: no-repeat;
